@@ -1,70 +1,89 @@
-# Getting Started with Create React App
+# Recipe Finder App 
+A beautiful, functional web application for discovering and saving your favorite recipes.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+##  Getting Started
 
-## Available Scripts
+1. **Clone the repository**
+```bash
+   git clone https://github.com/your-username/recipe-finder.git
+   cd recipe-finder
+```
+2. **Install dependencies**
 
-In the project directory, you can run:
+```bash
+  npm install
+  Run the development server
+```
+3. **Run the development server**
+```bash
+  npm start
+```
 
-### `npm start`
+4. **Open in browser**
+```text
+   http://localhost:3000
+````
+##  Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+###  **Search & Discover**
+- Instant search with live results
+- Clean grid display with recipe cards
+- Mobile-responsive design
+- Loading states and empty result handling
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+![Search Features](https://github.com/user-attachments/assets/aef191a4-4f14-45dd-bb15-e8a0bd810203)
+*Default veg search results*
 
-### `npm test`
+![Paneer Search](https://github.com/user-attachments/assets/be420b46-db5a-4ec9-80f4-60d3bf257720)
+*Search results for "paneer"*
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![Loading Screen](https://github.com/user-attachments/assets/1f32e8c0-edb2-4cf7-bed9-4e484d176bef)
+*Loading Screen*
 
-### `npm run build`
+![No Result](https://github.com/user-attachments/assets/c565c01f-309a-474d-b222-61c62d15e636)
+*No result handling*
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 📱 **Mobile Friendly**
+![Mobile View](https://github.com/user-attachments/assets/d54c8f3e-cca5-4cd2-b4dc-9565fa8e614f)
+*Fully responsive design*
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 📖 **Recipe Details**
+- Dedicated recipe pages
+- Complete ingredient lists
+- Step-by-step instructions
+- Back to search navigation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![Recipe View](https://github.com/user-attachments/assets/695f34bc-0fc9-4777-903c-8484291c5a16)
+*Search recipe view*
 
-### `npm run eject`
+The user is navigated to a dedicated page /recipe/52777</br>
+![Recipe Dtetail](https://github.com/user-attachments/assets/8b4f6786-0867-453b-a2da-7f9b778c71c0) 
+*Display recipe name, image, category, cuisine, ingredients and instructions*</br>
+*Back to Search" Link is on the detail page that takes the user back to the home/search page*
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### ❤ **Favorites System**
+- Add/remove favorites
+- Persistent storage
+- Dedicated favorites page
+- Bulk management
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![Add Favorites](https://github.com/user-attachments/assets/22362876-81df-4f9b-855d-69a4366bccc7)
+*In recipe detail page Add to Favorites button*
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+![Display favorites](https://github.com/user-attachments/assets/6689d495-f572-4f9e-a3c6-4a48d95822a8)
+*A separate page at favorites that displays a list of all the user's saved recipes*
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+![Remove Favorites](https://github.com/user-attachments/assets/314dd2b1-e983-486e-8969-c5b9fe133989)
+*A button for Remove from Favorites*
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🛠 Tech-stack
+- **Frontend**: React, React Router
+- **State Management**: Context API + useReducer
+- **Storage**: localStorage
+- **API**: TheMealDB
+- **Styling**: CSS3 (Flexbox, Grid)
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
